@@ -1,0 +1,26 @@
+Alt + Insert: 파일 내에 코드를 생성할 때(생성자, 메소드, 멤버변수, 클래스 기타 등등
+Alt + Ctrl + Insert: 파일 생성할 때
+
+Shift + Alt + 위,아래 방향키 : 라인위치 바꾸기
+Ctrl + +, -: 그룹 확장, 축소\
+
+AWS 클라우드 풀스택 국기과정 spring 공부(with springboot)
+github주소 : https://github.com/pktjesus/2303_thejoeun-awscloud
+
+https://docs.spring.io/spring-framework/docs/5.2.0.M3/spring-framework-reference/ -> 스크롤로 한눈에 파악하기 쉬움.
+https://docs.spring.io/spring-framework/reference/ -> paging으로 보는 거라 불편함
+https://github.com/spring-projects/spring-framework -> 공식 spring github주소
+https://springdoc.org/
+
+--스프링 부트 세팅방법
+1. Spring Initializer(https://start.spring.io/)에서 spring초기 프로젝트 환경구성세팅 zip파일 download
+2. download받은 파일을 압축 풀고 IntelliJ에서 해당 압춘 파일 root디렉토리에 open
+3. jdk setup(17버전) -> File-Project Structure-Project Settings-Project-SDK(17버전으로 세팅)
+4. Project-Settings-Build, Execution, Deployment-Build Tools-Gradle-Gradle JVM에서 jdk 17버전으로 맞추기
+5. 잘 안될 경우 Gradle탭에서 Tasks-build-clean 한번 눌러주고 Refresh버튼 눌러주고 다시 실행
+
+-- @Controller와 @RestController 차이점 숙지(아래 블로그 참조)
+https://mangkyu.tistory.com/49
+
+thymeleaf(타임리프) -> 더이상 jsp를 지원하지 않고 spring에서는 공식적으로 thymeleaf뷰엔진을 지원
+
