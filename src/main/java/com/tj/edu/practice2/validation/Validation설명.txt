@@ -1,0 +1,28 @@
+1. Validation(유효성 체크)을 사용하는 이유
+  (https://beanvalidation.org/2.0-jsr380/spec/)
+  (1) 검증해야 할 값이 많은 경우 코드의 길이가 길어진다.
+  (2) 서비스 로직과 분리가 필요한 경우
+  (3) 코드들이 흩어져 있는 경우 검증을 어디서 체크하는 알기 여러워서 재사용의 한계가 있다.
+
+  ex)
+  public String maleFemaleText(int maleFemale) {
+    // 0: 남자, 1: 여자
+    if (maleFemale == 0) {
+        return "남자";
+    }
+    if (maleFemale == 1) {
+        return "여자";
+    }
+
+    throw Exception;
+  }
+  ----------------------------------------------------------------------
+  public class User {
+    @Min(0)
+    @Max(1)
+    int maleFemale;
+  }
+
+  public String maleFemaleText(@Valid User user) {
+
+  }

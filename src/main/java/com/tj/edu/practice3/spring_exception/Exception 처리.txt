@@ -1,0 +1,4 @@
+spring에서 Exception처리하는 방법
+
+1.@ControolrtAdvice: Glabal 예외 처리 밑 특징 package/controller 예외 처리가능
+2 @ExeptionHandler :특징
