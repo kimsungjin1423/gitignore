@@ -12,7 +12,13 @@ https://docs.spring.io/spring-framework/reference/ -> paging으로 보는 거라
 https://github.com/spring-projects/spring-framework -> 공식 spring github주소
 https://springdoc.org/
 
---스프링 부트 세팅방법
+
+
+사전실행
+github에 git repository부터 만들어서 로컬 세팅
+https://gitignore.io/에서 .gitignore파일 내용을 git repository에 만든 .gitignore파일 내용을 replace한다.
+
+--스프링 부트 세팅방법(intellij)
 1. Spring Initializer(https://start.spring.io/)에서 spring초기 프로젝트 환경구성세팅 zip파일 download
 2. download받은 파일을 압축 풀고 IntelliJ에서 해당 압춘 파일 root디렉토리에 open
 3. jdk setup(17버전) -> File-Project Structure-Project Settings-Project-SDK(17버전으로 세팅)
