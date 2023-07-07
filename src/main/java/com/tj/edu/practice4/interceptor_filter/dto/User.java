@@ -1,4 +1,4 @@
-package com.tj.edu.practice4.dto;
+package com.tj.edu.practice4.interceptor_filter.dto;
 
 public class User {
     private String name;
@@ -29,4 +29,3 @@ public class User {
         this.pw = pw;
     }
 }
-
