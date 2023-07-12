@@ -1,9 +1,12 @@
 package com.tj.edu.practice5.jpa.model;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Builder
 @NoArgsConstructor
@@ -17,8 +20,10 @@ public class Board {
     private String boardKind;
     private String keywordType;
     private String userId;
-    private String cdatetime;
-    private String udatetime;
+    @Column(updatable = false)
+    private LocalDateTime cdatetime;
+    @Column(insertable = false)
+    private LocalDateTime udatetime;
     private String title;
     private String content;
     private String viewCnt;

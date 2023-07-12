@@ -31,6 +31,11 @@ class RepositoryTest {
 
     }
 
+    @DisplayName("간단한 JPA MemberRepository 테스트")
+    @Test
+    void memberRepositoryTest1() {
+
+    }
     @DisplayName("간단한 JPA BoardRepository 테스트")
     @Test
     void boardRepositoryTest1() {
