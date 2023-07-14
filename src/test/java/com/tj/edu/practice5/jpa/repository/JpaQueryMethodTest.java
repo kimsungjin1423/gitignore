@@ -32,8 +32,8 @@ public class JpaQueryMethodTest {
 //        memberHongildongList.forEach(System.out::println);
         System.out.println(memberHongildongList);
 
-        Optional<Member> memberOpt1 = memberRepository.findByCreateAt(LocalDateTime.MAX);
-        System.out.println(memberOpt1);
+//        Optional<Member> memberOpt1 = memberRepository.findByCreateAt(LocalDateTime.MAX);
+//        System.out.println(memberOpt1);
 
         System.out.println("findByName: " + memberRepository.findByName("이순신"));
         System.out.println("queryByName: " + memberRepository.queryByName("이순신"));

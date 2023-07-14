@@ -15,6 +15,8 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 //    Member findByName(String name);
    Set<Member> readByEmail(String email);
 
+   Member findByEmail(String email);
+
    List<Member> findByName(String name);
 
    Page<Member> findByName(String name, Pageable pageable);
@@ -37,7 +39,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
    List<Member> streamByName(String name);
 //    List<Member> findByImgNo(String name);      // error
 
-   Optional<Member> findByCreateAt(LocalDateTime localDataTime);
+//    Optional<Member> findByCreateAt(LocalDateTime localDataTime);
 
    List<Member> findTop1ByEmail(String email);
 
@@ -55,17 +57,17 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 
    List<Member> findByNameOrEmail(String name, String email);
 
-   List<Member> findByCreateAtAfter(LocalDateTime yesterday);
-
-   List<Member> findByCreateAtIsAfter(LocalDateTime yesterday);
-
-   List<Member> findByCreateAtGreaterThan(LocalDateTime yesterday);
-
-   List<Member> findByCreateAtGreaterThanEqual(LocalDateTime yesterday);
+//    List<Member> findByCreateAtAfter(LocalDateTime yesterday);
+//
+//    List<Member> findByCreateAtIsAfter(LocalDateTime yesterday);
+//
+//    List<Member> findByCreateAtGreaterThan(LocalDateTime yesterday);
+//
+//    List<Member> findByCreateAtGreaterThanEqual(LocalDateTime yesterday);
 
    List<Member> findByIdGreaterThanEqual(Long id);
 
-   List<Member> findByCreateAtBetween(LocalDateTime yesterday, LocalDateTime tomorrow);
+//    List<Member> findByCreateAtBetween(LocalDateTime yesterday, LocalDateTime tomorrow);
 
    List<Member> findByIdGreaterThanEqualAndIdLessThanEqual(Long id1, Long id2);
 
@@ -85,9 +87,9 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 
    List<Member> findByNameOrderByIdDesc(String name);
 
-   List<Member> findByAddressIsEmpty();
-
-   List<Member> findByAddressIsNotEmpty();
+//    List<Member> findByAddressIsEmpty();
+//
+//    List<Member> findByAddressIsNotEmpty();
 
    List<Member> findByMaleIsFalse();
 }
