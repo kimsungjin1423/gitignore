@@ -61,19 +61,19 @@ spring:
       enabled: true
 
 
-#logging.level:
+##logging.level:
 logging:
   level:
     org:
-      #      hibernate: trace
+      ##      hibernate: trace
       hibernate:
         orm:
           jdbc:
             bind: trace   # hibernate에서 ? 값 보기
-        SQL: debug
-        #        type: trace
-        type:
-          decriptor:
-            sql: trace
-#    root: trace
+#        SQL: debug
+##        type: trace
+#        type:
+#          decriptor:
+#            sql: trace
+##    root: trace
 
