@@ -3,6 +3,7 @@ package com.tj.edu.practice5.jpa.repository;
 import com.tj.edu.practice5.jpa.model.Author;
 import com.tj.edu.practice5.jpa.model.Book;
 import com.tj.edu.practice5.jpa.model.Publisher;
+import jakarta.persistence.EntityManager;
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,8 +41,8 @@ public class AuthorRepositoryTest {
         authorRepository.saveAll(Lists.newArrayList(author1, author2));
 
 //        bookRepository.findAll().forEach(System.out::println);
-        System.out.println(">>>book기준 " + bookRepository.findAll().get(2).getAuthors());
-        System.out.println(">>>author기준 " + bookRepository.findAll().get(1).getAuthors());
+        System.out.println(">>> book기준 " + bookRepository.findAll().get(2).getAuthors());
+        System.out.println(">>> author기준" + authorRepository.findAll().get(1).getBooks());
     }
 
     private Book givenBook(String name) {

@@ -31,6 +31,6 @@ public class Publisher extends BaseEntity {
     private List<Book> books;
 //    private Set<Book> books;
 
-    @ManyToOne
-    private List<Author> authors;
+//    @ManyToOne
+//    private List<Author> authors;
 }

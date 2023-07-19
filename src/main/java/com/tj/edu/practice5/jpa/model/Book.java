@@ -41,7 +41,7 @@ public class Book extends BaseEntity  {
     @ToString.Exclude
     private List<Review> reviews;
 
-//    @ManyToMany
-//    @ToString.Exclude
-//    private List<Author> authors;
+    @ManyToMany
+    @ToString.Exclude
+    private List<Author> authors;
 }

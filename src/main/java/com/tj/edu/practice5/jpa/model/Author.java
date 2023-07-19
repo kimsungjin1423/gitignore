@@ -24,13 +24,14 @@ public class Author extends BaseEntity {
     @Column(nullable = false)
     private String name;
 
-    //    @ManyToMany
-//    private List<Book> books;
-    @OneToMany
-    @JoinColumn
-    private List<AuthorAndBook> authorAndBookList;
-    @OneToMany
-    @JoinColumn
-    private  List<Publisher> publisherList;
-}
+    @ManyToMany
+    private List<Book> books;
 
+//    @OneToMany
+//    @JoinColumn
+//    private List<AuthorAndBook> authorAndBookList;
+
+//    @OneToMany
+//    @JoinColumn
+//    private List<Publisher> publisherList;
+}

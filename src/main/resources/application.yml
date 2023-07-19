@@ -6,6 +6,12 @@ application:
   title: thejoeun company
 
 spring:
+  security:
+    user:
+      name: user
+      password: 1234
+  thymeleaf:
+    cache: false
   sql:
     init:
       mode: always
