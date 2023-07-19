@@ -1,6 +1,5 @@
 package com.tj.edu.practice4.test;
 
-import com.tj.edu.practice4.test.model.Member;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -28,6 +27,7 @@ class TestControllerTest {
     private MockMvc mockMvc;
     @Autowired
     private WebApplicationContext context;
+
     @BeforeEach
     public void mockMvcSetUp() {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(context)
@@ -49,12 +49,12 @@ class TestControllerTest {
     @DisplayName("getAllStringsVal 조회 성공여부 테스트")
     @Test
     public void getAllStringsVal() throws Exception {
-        List<String> testList = Arrays.asList("abc", "xyz");
-
         mockMvc.perform(get("/test1")
                         .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0]").value("abc"))
+                .andExpect(jsonPath("$[1]").value("xyz"))
         ;
     }
 }
