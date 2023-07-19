@@ -29,7 +29,7 @@ public class JUnitTest {
     public void junitTest2() {
         int a = 1;
         int b = 3;
-        int sum = 4;
+        int sum = 3;
 
         Assertions.assertEquals(a + b, sum);
     }
